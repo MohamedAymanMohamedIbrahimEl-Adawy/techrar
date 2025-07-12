@@ -6,13 +6,13 @@ import '../../domain/repo/task_repository.dart';
 import '../model/task_model.dart';
 
 class TaskRepositoryImpl implements TaskRepository {
-  final NetworkClientInterface networkClientInterface;
+  final NetworkClientInterface networkClient;
 
-  TaskRepositoryImpl({required this.networkClientInterface});
+  TaskRepositoryImpl({required this.networkClient});
 
   @override
   Future<List<TaskModel>> getTasks() async {
-    final ApiResponseModel apiResponseModel = await networkClientInterface.get(
+    final ApiResponseModel apiResponseModel = await networkClient.get(
       endPoint: ApiConstants.tasks,
     );
     apiResponseModel.data;

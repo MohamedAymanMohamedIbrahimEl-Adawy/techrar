@@ -7,8 +7,7 @@ import '../../domain/repo/task_repository.dart';
 import '../../domain/usecase/tasks_use_case.dart';
 
 final tasksRepositoryProvider = Provider<TaskRepository>(
-  (ref) =>
-      TaskRepositoryImpl(networkClientInterface: serviceLocator<DioClient>()),
+  (ref) => TaskRepositoryImpl(networkClient: serviceLocator<DioClient>()),
 );
 final tasksUseCaseProvider = Provider<TasksUseCase>(
   (ref) => TasksUseCase(repository: ref.read(tasksRepositoryProvider)),
