@@ -1,0 +1,21 @@
+{
+  "logout": "Logout",
+  "dashboard": "Dashboard",
+  "tasks": "Tasks",
+  "profile": "Profile",
+  "all": "All",
+  "completed": "Completed",
+  "incomplete": "Incomplete",
+  "numberOfTasks": "Number of tasks",
+  "error": "Error",
+  "projectTeamDashboard": "Project Team Dashboard",
+  "teamMembers": "Team Members",
+  "recentTasks": "Recent Tasks",
+  "filter": "Filter",
+  "addTask": "Add Task",
+  "title": "Title",
+  "save": "Save",
+  "lightMode": "Light Mode",
+  "darkMode": "Dark Mode",
+  "userId": "User Id"
+}

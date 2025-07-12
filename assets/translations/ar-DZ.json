@@ -1,0 +1,21 @@
+{
+  "logout": "تسجيل الخروج",
+  "dashboard": "لوحة التحكم",
+  "tasks": "المهام",
+  "profile": "الملف الشخصي",
+  "all": "الكل",
+  "completed": "مكتملة",
+  "incomplete": "غير مكتملة",
+  "numberOfTasks": "عدد المهام",
+  "error": "خطأ",
+  "projectTeamDashboard": "لوحة تحكم فريق المشروع",
+  "teamMembers": "أعضاء الفريق",
+  "recentTasks": "المهام الأخيرة",
+  "filter": "تصنيف",
+  "addTask": "إضافة مهمة",
+  "title": "العنوان",
+  "save": "حفظ",
+  "lightMode": "الوضع النهاري",
+  "darkMode": "الوضع الليلي",
+  "userId":"الرقم التعريفي"
+}

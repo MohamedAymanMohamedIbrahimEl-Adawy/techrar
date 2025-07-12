@@ -1,0 +1,101 @@
+name: techrar
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.8
+  flutter_riverpod: ^2.6.1
+  easy_localization: ^3.0.7+1
+  connectivity_plus: ^6.1.4
+  device_info_plus: ^11.5.0
+  vpn_connection_detector: ^1.0.9
+  dio: ^5.8.0+1
+  pretty_dio_logger: ^1.4.0
+  get_it: ^8.0.3
+ 
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+#   flutter_native_splash: ^2.4.0
+#   flutter_launcher_icons: ^0.12.0
+
+# flutter_icons:
+#   android: "launcher_icon"
+#   ios: true
+#   remove_alpha_ios: true
+#   image_path_android: "assets/images/app_icon_android.png"
+#   image_path_ios: "assets/images/app_icon_ios.png"
+#   adaptive_icon_background: "#FFFFFF"
+#   adaptive_icon_foreground: "assets/images/app_icon_android.png"
+
+
+# flutter_native_splash:
+#   image: "assets/images/splash.png"
+#   color: "#ED6C24"
+#   android: true
+#   ios: true
+#   fullscreen: true
+#   android_12:
+#     image: "assets/images/splash_12.png"
+#     color: "#ED6C24"
+#     icon_background_color: "#ED6C24"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/translations/
+
+  fonts:
+    - family: Alexandria 
+      fonts:
+        - asset: assets/fonts/Alexandria-Regular.ttf
+        - asset: assets/fonts/Alexandria-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Alexandria-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Alexandria-Bold.ttf
+          weight: 700
+
+    - family: Montserrat 
+      fonts:
+        - asset: assets/fonts/Montserrat-Regular.ttf
+        - asset: assets/fonts/Montserrat-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Montserrat-Bold.ttf
+          weight: 700
+
