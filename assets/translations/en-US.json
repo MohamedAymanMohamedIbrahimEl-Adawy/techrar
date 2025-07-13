@@ -17,5 +17,8 @@
   "save": "Save",
   "lightMode": "Light Mode",
   "darkMode": "Dark Mode",
-  "userId": "User Id"
+  "userId": "User Id",
+    "warning": "Warning",
+  "vpnOrProxyDetected": "VPN or Proxy detected",
+  "pleaseDisableVpnOrProxy": "Please disable VPN or Proxy to continue"
 }

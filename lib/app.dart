@@ -5,7 +5,7 @@ import 'package:techrar/core/services/theme/app_theme.dart';
 import 'package:techrar/features/parent/parent_screen.dart';
 
 import 'core/global/globals.dart';
-import 'core/services/network/vpn/vpn_guard.dart';
+import 'core/services/network/vpn/vpn_proxy_checker.dart';
 import 'core/services/theme/theme_provider.dart';
 import 'features/warnings/presentation/view/screen/main_screen.dart';
 

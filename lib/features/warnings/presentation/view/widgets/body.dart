@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
 class Body extends StatelessWidget {
@@ -10,11 +11,11 @@ class Body extends StatelessWidget {
       child: Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,
-          children: const [
-            Icon(Icons.warning, size: 80, color: Colors.red),
+          children: [
+            Icon(Icons.warning, size: 60, color: Colors.red),
             SizedBox(height: 16),
             Text(
-              'VPN / Proxy Detected',
+              'vpnOrProxyDetected'.tr(),
               style: TextStyle(
                 fontSize: 24,
                 color: Colors.red,
@@ -24,10 +25,11 @@ class Body extends StatelessWidget {
             Padding(
               padding: EdgeInsets.all(16.0),
               child: Text(
-                'Please disable your VPN or proxy to use this application.',
+                'pleaseDisableVpnOrProxy'.tr(),
                 textAlign: TextAlign.center,
               ),
             ),
+            IconButton(onPressed: () {}, icon: Icon(Icons.refresh, size: 36)),
           ],
         ),
       ),

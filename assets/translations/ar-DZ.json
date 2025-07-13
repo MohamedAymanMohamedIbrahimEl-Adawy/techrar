@@ -17,5 +17,9 @@
   "save": "حفظ",
   "lightMode": "الوضع النهاري",
   "darkMode": "الوضع الليلي",
-  "userId":"الرقم التعريفي"
+  "userId":"الرقم التعريفي",
+    "warning": "تحذير",
+  "vpnOrProxyDetected": "تم الكشف عن VPN أو وكيل",
+  "pleaseDisableVpnOrProxy": "يرجى تعطيل VPN أو الوكيل للمتابعة"
+  
 }
