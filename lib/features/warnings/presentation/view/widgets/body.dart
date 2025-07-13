@@ -1,11 +1,13 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import '../../../../../core/services/network/vpn/vpn_proxy_checker.dart';
 
-class Body extends StatelessWidget {
+class Body extends ConsumerWidget {
   const Body({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     return Padding(
       padding: const EdgeInsets.all(16),
       child: Center(
@@ -29,7 +31,12 @@ class Body extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
             ),
-            IconButton(onPressed: () {}, icon: Icon(Icons.refresh, size: 36)),
+            IconButton(
+              onPressed: () {
+                ref.invalidate(vpnGuardProvider);
+              },
+              icon: Icon(Icons.refresh, size: 36),
+            ),
           ],
         ),
       ),
