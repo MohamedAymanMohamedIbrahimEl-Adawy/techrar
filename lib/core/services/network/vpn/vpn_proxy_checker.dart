@@ -1,6 +1,5 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:vpn_connection_detector/vpn_connection_detector.dart';
 
 class VpnProxyChecker {
   static const MethodChannel _channel = MethodChannel('vpn_proxy_channel');
@@ -33,8 +32,6 @@ class VpnProxyChecker {
 }
 
 final vpnGuardProvider = FutureProvider<bool>((ref) async {
-  final isVpnActive =
-      await VpnConnectionDetector.isVpnActive() ||
-      await VpnProxyChecker.isUsingVPNOrProxy();
+  final isVpnActive = await VpnProxyChecker.isUsingVPNOrProxy();
   return isVpnActive;
 });

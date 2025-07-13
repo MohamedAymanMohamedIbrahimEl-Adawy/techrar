@@ -21,8 +21,7 @@ Flutter app with Riverpod for managing team tasks.
    flutter pub get
    flutter run
    ```
-## 📷 Screenshots (Optional)
-## Screenshots
+## 📷 Screenshots
 
 <img src="screenshots/1.png" alt="Dashboard Screen" width="400">
 <img src="screenshots/2.png" alt="Tasks Screen" width="400">
@@ -65,7 +64,7 @@ lib/
 
 ## 🧠 State Management
 
-All business and UI logic is managed using **Riverpod** providers:
+All business and UI logic is managed using **Riverpod**
 
 
 
